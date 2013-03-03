@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/settings_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下设备在出现异常时均会出现消息提示，请选择他们的等级和是否弹出提示，不同等级将会以不一样的颜色标签出现。弹出提示将在有消息时以窗口形式弹出"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/setting_style"
+                android:text="门厅" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/setting_style"
+                android:text="报警器" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/setting_style"
+                android:text="级别1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/setting_style"
+                android:text="弹窗" />
+        </TableRow>
+    </LinearLayout>
+
+    <include layout="@layout/settings_buttom" />
+
+</LinearLayout>

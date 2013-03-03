@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="horizontal">
+
+	<TextView android:id="@+id/message_tv_type" style="@style/message_text_style"
+		android:text="@string/message_type" />
+
+	<TextView android:id="@+id/message_tv_address" style="@style/message_text_style"
+		android:text="@string/message_address" />
+
+	<TextView android:id="@+id/message_tv_level" style="@style/message_text_style"
+		android:text="@string/message_level" />
+
+	<TextView android:id="@+id/message_tv_time" style="@style/message_text_style"
+		android:text="@string/message_time" />
+
+</LinearLayout>

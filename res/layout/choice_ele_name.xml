@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/folder_change_color"
+            android:text="普通灯" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/folder_change_color"
+            android:text="求救" />
+
+        <Button
+            android:id="@+id/button3"
+             style="@style/folder_change_color"
+            android:text="红外探测" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/folder_change_color"
+            android:text="电视" />
+
+        <Button
+            android:id="@+id/button5"
+             style="@style/folder_change_color"
+            android:text="空调" />
+
+        <Button
+            android:id="@+id/button6"
+             style="@style/folder_change_color"
+            android:text="门磁" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button7"
+             style="@style/folder_change_color"
+            android:text="烟感" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/folder_change_color"
+            android:text="冰箱" />
+
+        <Button
+            android:id="@+id/button9"
+             style="@style/folder_change_color"
+            android:text="调光灯" />
+
+    </TableRow>
+
+</LinearLayout>

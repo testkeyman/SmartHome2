@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="40dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/dialog_version_title"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/dialog_et_input_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="我最喜欢的"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="是否替换已有版本" />
+
+            <RelativeLayout
+                android:id="@+id/setting_version_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/setting_et_version_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" >
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/setting_ib_version"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@+id/setting_et_version_name"
+                    android:background="@drawable/account_setting_spinner_select" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dialog_btn_confirm_save"
+                    style="@style/dialog_btn_style"
+                    android:text="@string/main_btn_confirm" />
+
+                <Button
+                    android:id="@+id/dialog_btn_cancel_save"
+                    style="@style/dialog_btn_style"
+                    android:text="@string/main_btn_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

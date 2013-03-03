@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/timer_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="显示时间" />
+
+        <com.wsp.wheelview.WheelView
+            android:id="@+id/start_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.wsp.wheelview.WheelView
+            android:id="@+id/start_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.wsp.wheelview.WheelView
+            android:id="@+id/start_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_pick_timer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <com.eastedge.smarthome.wheelview.WheelView
+            android:id="@+id/delay_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.eastedge.smarthome.wheelview.WheelView
+            android:id="@+id/delay_time_units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_delay_title"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/dialog_et_delayed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_btn_confirm"
+            style="@style/dialog_btn_style"
+            android:text="@string/main_btn_confirm" />
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            style="@style/dialog_btn_style"
+            android:text="@string/main_btn_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

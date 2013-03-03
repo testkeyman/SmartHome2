@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<!-- Top -->
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+
+		<Button style="@style/main_style" android:text="@string/air_title" />
+
+		<TextView android:id="@+id/main_tv_time" style="@style/main_style"
+			android:text="@string/main_tv_time" />
+
+		<Button style="@style/main_style" android:text="@string/main_btn_add_socket" />
+	</LinearLayout>
+
+	<!-- Content -->
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1">
+
+		<ToggleButton android:id="@+id/toggleButton" style="@style/common_tb_style"
+			android:textOff="@string/common_control" android:textOn="@string/common_learn" />
+
+		<TableLayout android:id="@+id/TableLayout01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:layout_marginLeft="20.0px"
+			android:layout_marginRight="20.0px">
+
+			<TableRow>
+
+				<Button style="@style/air_text_style" android:text="自动高温" />
+
+				<Button style="@style/air_text_style" android:text="自动中温" />
+
+				<Button style="@style/air_text_style" android:text="自动低温" />
+			</TableRow>
+			<TableRow>
+
+				<Button style="@style/air_text_style" android:text="自动高温" />
+
+				<Button style="@style/air_text_style" android:text="自动中温" />
+
+				<Button style="@style/air_text_style" android:text="自动低温" />
+			</TableRow>
+			<TableRow>
+
+				<Button style="@style/air_text_style" android:text="自动高温" />
+
+				<Button style="@style/air_text_style" android:text="自动中温" />
+
+				<Button style="@style/air_text_style" android:text="自动低温" />
+			</TableRow>
+
+		</TableLayout>
+	</RelativeLayout>
+
+	<!-- Bottom -->
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+
+		<Button android:id="@+id/main_btn_back" style="@style/main_style"
+			android:text="@string/main_btn_back" />
+
+		<TextView android:id="@+id/main_tv_message" style="@style/main_style"
+			android:text="@string/main_tv_message" />
+
+		<Button android:id="@+id/main_btn_confirm" style="@style/main_style"
+			android:text="@string/main_btn_add" />
+	</LinearLayout>
+
+</LinearLayout>

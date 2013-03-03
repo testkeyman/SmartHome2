@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Bottom -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scene_btn_eleclass"
+            style="@style/main_style"
+            android:text="@string/main_btn_back" />
+
+        <TextView
+            android:id="@+id/main_tv_message"
+            style="@style/main_style"
+            android:text="@string/main_tv_message" />
+
+        <Button
+            android:id="@+id/scene_btn_add"
+            style="@style/main_style"
+            android:text="@string/main_btn_add" />
+    </LinearLayout>
+
+</LinearLayout>

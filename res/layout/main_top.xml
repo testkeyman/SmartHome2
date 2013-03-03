@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_btn_lifecontent"
+            style="@style/main_style"
+            android:background="@drawable/left_up_bg"
+            android:text="@string/main_btn_lifecontent" />
+
+        <TextView
+            android:id="@+id/main_tv_time"
+            style="@style/main_style"
+            android:background="@drawable/up_middle"
+            android:text="@string/main_tv_time" />
+
+        <Button
+            android:id="@+id/main_btn_roomctrl"
+            style="@style/main_style"
+            android:background="@drawable/right_up_bg"
+            android:text="@string/main_btn_roomctrl" />
+    </LinearLayout>
+
+</merge>

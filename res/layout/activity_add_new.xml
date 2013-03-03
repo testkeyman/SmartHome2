@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Top -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/main_style"
+            android:focusable="false"
+            android:text="@string/main_null" />
+
+        <TextView
+            android:id="@+id/main_tv_time"
+            style="@style/main_style"
+            android:text="@string/main_tv_time" />
+
+        <Button
+            style="@style/main_style"
+            android:focusable="false"
+            android:text="@string/main_null" />
+    </LinearLayout>
+
+    <!-- Content -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/add_btn_general"
+            style="@style/add_classify_style"
+            android:text="@string/add_classify_general" />
+
+        <Button
+            android:id="@+id/add_btn_auto"
+            style="@style/add_classify_style"
+            android:text="@string/add_classify_auto" />
+
+        <Button
+            android:id="@+id/add_btn_default"
+            style="@style/add_classify_style"
+            android:text="@string/add_classify_default" />
+    </LinearLayout>
+    <!-- Bottom -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scene_btn_eleclass"
+            style="@style/main_style"
+            android:text="@string/main_btn_back" />
+
+        <TextView
+            android:id="@+id/main_tv_message"
+            style="@style/main_style"
+            android:text="@string/main_tv_message" />
+
+        <Button
+            android:id="@+id/scene_btn_add"
+            style="@style/main_style"
+            android:text="@string/main_btn_add" />
+    </LinearLayout>
+
+</LinearLayout>

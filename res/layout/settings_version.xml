@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/settings_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                style="@style/setting_style"
+                android:text="@string/settings_save_current" />
+
+            <Button
+                android:id="@+id/settings_btn_save"
+                style="@style/setting_style"
+                android:textColor="#000000"
+                android:text="@string/settings_save" />
+
+            <TextView style="@style/setting_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                style="@style/setting_style"
+                android:text="@string/settings_recover_factory" />
+
+            <Button
+                android:id="@+id/settings_btn_recover"
+                style="@style/setting_style"
+                 android:textColor="#000000"
+                android:text="@string/settings_recover" />
+
+            <TextView style="@style/setting_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                style="@style/setting_style"
+                android:text="@string/settings_recover_save" />
+
+            <RelativeLayout
+                android:id="@+id/setting_version_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/setting_et_version_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp" >
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/setting_ib_version"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@+id/setting_et_version_name"
+                    android:background="@drawable/account_setting_spinner_select" />
+              
+            </RelativeLayout>
+
+            <TextView style="@style/setting_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/settings_buttom" />
+
+</LinearLayout>

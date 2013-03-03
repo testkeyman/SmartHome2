@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<!-- Top -->
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+
+		<Button android:id="@+id/main_btn_search" style="@style/main_style"
+			android:text="@string/main_btn_search" />
+
+		<TextView android:id="@+id/main_tv_time" style="@style/main_style"
+			android:text="@string/main_tv_time" />
+
+		<Button style="@style/main_style" android:text="历史记录" />
+	</LinearLayout>
+
+	<!-- Content -->
+
+	<ListView android:id="@+id/message_listview"
+		android:layout_width="fill_parent" android:layout_height="0dp"
+		android:layout_weight="1" />
+
+	<!-- Bottom -->
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+
+		<Button android:id="@+id/main_btn_back" style="@style/main_style"
+			android:text="返回" />
+
+		<TextView android:id="@+id/main_tv_message" style="@style/main_style"
+			android:text="@string/main_tv_message" />
+
+		<Button style="@style/main_style" android:text="分类筛选" />
+	</LinearLayout>
+
+</LinearLayout>

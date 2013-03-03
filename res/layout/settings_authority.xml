@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/settings_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                android:id="@+id/old_pwd"
+                style="@style/setting_style"
+                android:text="@string/settings_old_pwd" />
+
+            <EditText
+                android:id="@+id/settings_et_old_pwd"
+                style="@style/setting_style"
+                android:inputType="textPassword" />
+
+            <TextView style="@style/setting_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                style="@style/setting_style"
+                android:text="@string/settings_new_pwd" />
+
+            <EditText
+                android:id="@+id/settings_et_new_pwd"
+                style="@style/setting_style"
+                android:inputType="textPassword" />
+
+            <TextView style="@style/setting_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                style="@style/setting_style"
+                android:text="@string/settings_confirm_pwd" />
+
+            <EditText
+                android:id="@+id/settings_et_confirm_pwd"
+                style="@style/setting_style"
+                android:inputType="textPassword" />
+
+            <TextView style="@style/setting_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                style="@style/setting_style"
+                android:layout_weight="2"
+                android:text="@string/settings_authority" />
+
+            <LinearLayout style="@style/setting_style" >
+
+                <CheckBox
+                    android:id="@+id/settings_cb_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_edit" />
+
+                <CheckBox
+                    android:id="@+id/settings_cb_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_delete" />
+
+                <CheckBox
+                    android:id="@+id/settings_cb_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_add" />
+
+                <TextView style="@style/setting_style" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_linearLayout_style" >
+
+            <TextView
+                style="@style/setting_style"
+                android:layout_weight="2" />
+
+            <TextView
+                style="@style/setting_style"
+                android:paddingRight="30dp"
+                android:text="@string/setting_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/settings_buttom" />
+
+</LinearLayout>

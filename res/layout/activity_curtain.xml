@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Top -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/main_style"
+            android:text="@string/curtain_this" />
+
+        <TextView
+            android:id="@+id/main_tv_time"
+            style="@style/main_style"
+            android:text="@string/main_tv_time" />
+
+        <Button
+            style="@style/main_style"
+            android:text="@string/main_btn_add_socket" />
+    </LinearLayout>
+
+    <!-- Content -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            style="@style/common_tb_style"
+            android:textOff="@string/common_control"
+            android:textOn="@string/common_learn" />
+
+        <LinearLayout
+            android:id="@+id/curtain_this"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/device_text_style"
+                android:text="@string/curtain_this" />
+
+            <Switch
+                android:id="@+id/curtain_this_switch"
+                style="@style/device_text_style"
+                android:padding="0dp"
+                android:textOff="@string/common_off"
+                android:textOn="@string/common_on" />
+
+            <TextView
+                style="@style/device_text_style"
+                android:text="@string/common_pause" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/curtain_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curtain_this"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/device_text_style"
+                android:text="@string/curtain_power" />
+
+            <Switch
+                android:id="@+id/curtain_power_switch"
+                style="@style/device_text_style"
+                android:padding="0dp"
+                android:textOff="@string/common_off"
+                android:textOn="@string/common_on" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Bottom -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_btn_back"
+            style="@style/main_style"
+            android:text="@string/main_btn_back" />
+
+        <TextView
+            android:id="@+id/main_tv_message"
+            style="@style/main_style"
+            android:text="@string/main_tv_message" />
+
+        <Button
+            android:id="@+id/main_btn_confirm"
+            style="@style/main_style"
+            android:text="@string/main_btn_add" />
+    </LinearLayout>
+
+</LinearLayout>

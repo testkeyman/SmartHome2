@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_weight="1"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/scene_tv_address"
+        style="@style/scene_text_style"
+        android:text="@string/scene_address" />
+
+    <TextView
+        android:id="@+id/scene_tv_device"
+        style="@style/scene_text_style"
+        android:text="@string/scene_device" />
+<!-- 
+    <ToggleButton
+        android:id="@+id/scene_switch"
+        style="@style/scene_text_style"
+        android:textOff="@string/common_off"
+        android:textOn="@string/common_on" /> -->
+
+    <TextView
+        android:id="@+id/scene_tv_delay"
+        style="@style/scene_text_style"
+        android:text="@string/scene_delay" />
+
+    <TextView
+        android:id="@+id/scene_tv_statu"
+        style="@style/scene_text_style"
+        android:text="@string/scene_statu" />
+
+</LinearLayout>

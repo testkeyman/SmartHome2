@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eastedge.smarthome"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.eastedge.smarthome" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library android:name="android.test.runner" />
+        <!-- 主界面  LifeSceneActivity -->
+        <activity
+            android:name=".activitygroup.MainGroup"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 生活情景 -->
+        <activity
+            android:name=".activitys.LifeSceneActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 情景界面 -->
+        <activity
+            android:name=".activitys.OtherActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 情景界面 -->
+        <activity
+            android:name=".activitys.SceneUsedActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 电器分类 -->
+        <activity
+            android:name=".activitys.ElectricalActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 电器子分类 -->
+        <activity
+            android:name=".activitys.ElectricSecondActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 电器子分类房间显示 -->
+        <activity
+            android:name=".activitys.ElectricRoomShow"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 房间控制 -->
+        <activity
+            android:name=".activitys.RoomControlActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <!-- 房间控制添加 -->
+        <activity
+            android:name=".activitys.RoomActivity"
+            android:screenOrientation="landscape" />
+        <!-- 基础电器页面 -->
+        <activity
+            android:name=".activitys.EletricBaseActivity"
+            android:screenOrientation="landscape" />
+        <!-- 灯控制 -->
+        <activity
+            android:name=".activitys.ElectricControlActivity"
+            android:screenOrientation="landscape" />
+        <!-- 生活情景————添加设备 -->
+        <activity
+            android:name=".activitygroup.AddMainGroup"
+            android:screenOrientation="landscape" />
+        <!-- 消息提示界面 -->
+
+        <activity
+            android:name=".activitys.MessagePromptActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <!-- 账户设置界面 -->
+        <activity
+            android:name=".activitys.AccountSettingActivity"
+            android:screenOrientation="landscape" />
+        <!-- 电视遥控界面 -->
+
+        <activity
+            android:name=".activitys.TVTelecontrolActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- 空调设置界面 -->
+        <activity
+            android:name=".activitys.AirConditionActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- 权限设置 -->
+        <activity
+            android:name=".activitys.SettingAuthorityActivity"
+            android:screenOrientation="landscape" />
+        <!-- 智能联动 -->
+        <activity
+            android:name=".activitys.SceneNewActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- 版本设置 -->
+        <activity
+            android:name=".activitys.SettingVersionActivity"
+            android:screenOrientation="landscape" />
+        <!-- 消息设置 -->
+        <activity
+            android:name=".activitys.SettingMessageActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- Dialog样式Activity -->
+        <!-- 设置界面 -->
+        <activity
+            android:name=".activitys.DialogSetting"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialog" />
+        <!-- 设置版本界面 -->
+        <activity
+            android:name=".activitys.DialogSettingVersion"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialog" />
+        <!-- 查询消息界面 -->
+        <activity
+            android:name=".activitys.DialogSearch"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialog" />
+        <!-- 生活情景 添加设备 -->
+        <activity
+            android:name=".activitys.AddNewDeviceActivity"
+            android:screenOrientation="landscape" />
+        <!-- 延时设置 界面 -->
+        <activity
+            android:name=".activitys.DialogDelayed"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialog" />
+
+        <service android:name=".service.BackgroundService" >
+        </service>
+
+        <receiver android:name=".broadcast.MyBroadCast" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="receiveFun53" />
+                <action android:name="studyMod" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

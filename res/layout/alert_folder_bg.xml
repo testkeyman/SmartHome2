@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/color1"
+           style="@style/folder_change_color"
+           android:background="@drawable/room1_bg"
+             />
+
+        <Button
+            android:id="@+id/color2"
+           style="@style/folder_change_color"
+           android:background="@drawable/room2_bg"
+            />
+
+        <Button
+            android:id="@+id/color3"
+            style="@style/folder_change_color"
+             android:background="@drawable/room3_bg"
+             />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/color4"
+            style="@style/folder_change_color"
+            android:background="@drawable/room4_bg"
+             />
+
+        <Button
+            android:id="@+id/color5"
+            style="@style/folder_change_color"
+             android:background="@drawable/room5_bg"
+            />
+
+        <Button
+            android:id="@+id/color6"
+           style="@style/folder_change_color"
+           android:background="@drawable/room6_bg"
+             />
+
+    </TableRow>
+
+</LinearLayout>
